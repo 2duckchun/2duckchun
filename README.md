@@ -8,4 +8,4 @@
 - 😁 **현재 목표** : Express, MongoDB로 서버를 개설해서 나만의 웹사이트 만들기
 - 🐱‍🏍 **다음 목표** : React, typescript를 더 잘 다룰 수 있게 생각하며 공부하기
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=2)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=2duckchun)](https://github.com/anuraghazra/github-readme-stats)
