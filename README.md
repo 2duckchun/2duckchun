@@ -16,7 +16,7 @@
     
 ##
 - 🐱‍👤 **일상 목표** : 알고리즘 조금씩, 프로젝트 리팩토링 조금씩, 일기 쓰기
-- 😁 **현재 목표** : Express, MongoDB, React를 사용해서 A-Z를 경험해보며 나만의 웹사이트 만들기
-- 🐱‍🏍 **다음 목표** : React 심화 학습 및 프로젝트에 typescript 도입
+- 😁 **현재 목표** : Vue.js, React !! 
+- 🐱‍🏍 **다음 목표** : Express, MongoDB, React를 사용해서 A-Z를 경험해보며 나만의 웹사이트 만들기
 ---
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=kkts9308)](https://solved.ac/kkts9308/)
