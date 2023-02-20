@@ -16,3 +16,32 @@
 - 컴포넌트 생성
 - update
 - unmount 등... 굉장히 많으나 API 통신 할때는 create나 mount 상황을 많이 사용함
+
+## vue-router의 params 문법
+
+```
+(router.js)
+const routes = [
+  {
+    path: '/detail/:id',
+    component: Detail,
+  },
+];
+```
+
+## 컴포넌트 안에서 URL 파라미터를 확인하는 문법
+
+```
+{{ $route.params.파라미터명 }}
+```
+
+## 이벤트와 라우터 함께 사용하기
+```
+// 클릭시 사이트 이동 예시
+@click="$router.push('/detail/i')"
+
+// 클릭시 사이트 뒤로가기, 앞으로가기 기능 예시
+@click="$router.go(-1)" // 한 칸 뒤로
+@click="$router.go(2)" // 두 칸 앞으로
+```
+
