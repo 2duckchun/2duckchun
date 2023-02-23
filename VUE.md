@@ -48,7 +48,7 @@ const routes = [
 ## vue 컴포넌트 v-model
 ![image](https://user-images.githubusercontent.com/92588154/220934824-a0f99574-c536-4b7b-81ae-e2745f71fcad.png)
 
-```
+```vue
 // App.vue
 <script setup>
 import { ref } from 'vue'
@@ -63,7 +63,7 @@ const msg = ref('hello')
 </template>
 ```
 
-```
+```vue
 // CustomInput.vue
 <script setup>
 const props = defineProps(['modelValue'])
@@ -82,10 +82,15 @@ const emits = defineEmits(['update:modelValue'])
 자식컴포넌트에서는 바인딩할 input에 :value="modelValue" 와 @input=$emit('update:modelValue', $event.target.value) 를 넣어준다.
 그냥 정해진 것이여서 외워야 하는 것 같다.
 
+---
+
 기본적으로 컴포넌트의 v-model은 modelValue를 프로퍼티로, update:modelValue를 이벤트로 사용한다.
 이 때 v-model:title="bookTitle" 과 같이 수정해줄 수도 있다.
 
-```
+![image](https://user-images.githubusercontent.com/92588154/220937393-b12dd30e-8328-4aca-bfeb-233848d4bae1.png)
+
+
+```vue
 // App.vue
 <script setup>
 import { ref } from 'vue'
@@ -100,7 +105,7 @@ const bookTitle = ref('왕좌의 게임')
 </template>
 ```
 
-```
+```vue
 // CustomInput.vue
 <script setup>
 const props = defineProps(['title'])
