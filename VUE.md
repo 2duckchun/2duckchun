@@ -45,3 +45,72 @@ const routes = [
 @click="$router.go(2)" // 두 칸 앞으로
 ```
 
+## vue 컴포넌트 v-model
+![image](https://user-images.githubusercontent.com/92588154/220934824-a0f99574-c536-4b7b-81ae-e2745f71fcad.png)
+
+```
+// App.vue
+<script setup>
+import { ref } from 'vue'
+import CustomInput from './CustomInput.vue'
+
+const msg = ref('hello')
+
+</script>
+
+<template>
+  <CustomInput v-model="msg" /> {{ msg }}
+</template>
+```
+
+```
+// CustomInput.vue
+<script setup>
+const props = defineProps(['modelValue'])
+const emits = defineEmits(['update:modelValue'])
+</script>
+
+<template>
+  <input
+    :value="modelValue"
+    @input="$emit('update:modelValue', $event.target.value)"
+  />
+</template>
+```
+
+부모 컴포넌트에서는 v-model로 자기 ref를 건다.
+자식컴포넌트에서는 바인딩할 input에 :value="modelValue" 와 @input=$emit('update:modelValue', $event.target.value) 를 넣어준다.
+그냥 정해진 것이여서 외워야 하는 것 같다.
+
+기본적으로 컴포넌트의 v-model은 modelValue를 프로퍼티로, update:modelValue를 이벤트로 사용한다.
+이 때 v-model:title="bookTitle" 과 같이 수정해줄 수도 있다.
+
+```
+// App.vue
+<script setup>
+import { ref } from 'vue'
+import CustomInput from './CustomInput.vue'
+
+const bookTitle = ref('왕좌의 게임')
+
+</script>
+
+<template>
+  <CustomInput v-model:title="bookTitle" /> {{ bookTitle }}
+</template>
+```
+
+```
+// CustomInput.vue
+<script setup>
+const props = defineProps(['title'])
+const emits = defineEmits(['update:title'])
+</script>
+
+<template>
+  <input
+    :value="title"
+    @input="$emit('update:title', $event.target.value)"
+  />
+</template>
+```
