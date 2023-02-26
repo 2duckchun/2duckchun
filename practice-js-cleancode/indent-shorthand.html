@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>들여쓰기 제거</title>
+</head>
+<body>
+  <h1>분식점</h1>
+  <button>음식제작</button>
+  <h2 id="log"></h2>
+
+<script>
+  const logEl = document.querySelector('#log')
+  const delay = (time) => new Promise((resolve, reject) => setTimeout(() => resolve(), time))
+  const orderMsg = (order) => logEl.innerHTML += `${order}이 완료되었습니다. <br />`
+
+  const buttonClickHandler = async (orderList) => {
+    const delayTime = 2000
+    await delay(delayTime)
+    orderList.forEach(orderMsg)
+  }
+
+  function orderFood(el, orderList) {
+    if (!el || !Array.isArray(orderList)) return
+    el.addEventListener('click', () => buttonClickHandler(orderList))
+  }
+  orderFood(document.querySelector('button'), ['제육덮밥', '라면'])
+</script>
+
+</body>
+</html>
