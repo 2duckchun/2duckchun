@@ -344,3 +344,8 @@ function App() {
 
 export default App;
 ```
+
+## 4월25일!! TIL
+- vue를 사용할 때 ref, reactive로 묶이지 않은 변수를 template에 사용할 경우, 변수의 값이 바뀌더라도 바뀐 값이 새롭게 렌더링되지 않는다.
+- 알고 있던 것이여도 기록을 하지 않으면 망각하게 된다. 그래서 오랜만에 TIL을 기록한다.
+
