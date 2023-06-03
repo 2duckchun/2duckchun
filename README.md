@@ -9,15 +9,11 @@
           <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white">
           <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=Vue.js&logoColor=white">
           <br/><img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white">
-          <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=MongoDB&logoColor=white">
-          <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white">
     </div>
 </div>
     
 ##
-- 🐱‍👤 **일상 목표** : 알고리즘 조금씩, 프로젝트 리팩토링 조금씩, 일기 쓰기
-- 😁 **현재 목표** : Vue.js, React, Next.js !! 
-- 🐱‍🏍 **다음 목표** : Express, MongoDB, React를 사용해서 A-Z를 경험해보며 나만의 웹사이트 만들기
+- 😁 **현재 목표** : Algorithm, Next.js, firebase 
 ---
 
 
