@@ -1,3 +1,4 @@
+```ts
 // LocalStorage Interface
 abstract class LocalStorage<T> {
   protected items: Items<T>;
@@ -37,3 +38,4 @@ class SuperStorage extends LocalStorage<string> {
     this.items = {};
   }
 }
+```
