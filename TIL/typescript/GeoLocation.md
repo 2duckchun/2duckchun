@@ -1,3 +1,4 @@
+```ts
 // Geolocation Interface
 type GeolocationCoords = {
   latitude: number;
@@ -58,3 +59,4 @@ class Geolocator implements GeolocationAPI {
   };
   clearWatch = (id: number) => {};
 }
+```
