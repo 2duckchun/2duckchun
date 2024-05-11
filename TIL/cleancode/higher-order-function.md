@@ -1,3 +1,5 @@
+## higher-order-function
+
 ```js
 function authenticate() {
   // code to authenticate
